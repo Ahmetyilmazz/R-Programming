@@ -1,6 +1,9 @@
 
 
-# Programmer : Ahmet YILMAZ
+# Programmer : AHMET YILMAZ
+# Matematik - Bilgisayar / 4
+
+# Newton_Method's #
 
 
 f <- function(x){cos(x) - x}

@@ -3,6 +3,8 @@
 # Programmer : AHMET YILMAZ
 # Matematik - Bilgisayar / 4 
 
+# Secant_Method's #
+
 
 f <- function(x){cos(x) - x} # ÖRNEK FONKSİYON
 secant <- function(f,p0,p1,TOL,N0){

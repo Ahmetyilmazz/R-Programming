@@ -1,6 +1,9 @@
 
-# Programmer : Ahmet YILMAZ 
-# 
+
+# Programmer : AHMET YILMAZ
+# Matematik - Bilgisayar / 4
+
+# Euler_Method's #
 
 y <- function(t) {(t + 1)^2 - 0.5* exp(t)}
 

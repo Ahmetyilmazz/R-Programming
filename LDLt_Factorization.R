@@ -1,7 +1,9 @@
 
 
-# Programmer : AHMET YILMAZ 
+# Programmer : AHMET YILMAZ
 # Matematik - Bilgisayar / 4
+
+# LDLt_Factorization #
 
 
 A <- A<- matrix(c(4,-1,1,

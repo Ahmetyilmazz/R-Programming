@@ -1,10 +1,12 @@
 
 
-# Programmer: AHMET YILMAZ 
-# Matematik - Bilgisayar / 19040181039
-# R_Lu_Ayrisimi
+# Programmer : AHMET YILMAZ
+# Matematik - Bilgisayar / 4
 
-# LU_AYRIŞIM_ÇALIŞMASI_Sayfa_424
+# LU_Ayrisim #
+
+
+
 
 A <- matrix(c(1,2,3,-1,1,1,-1,2,0,-1,-1,3,3,1,2,-1), nrow = 4)
 
@@ -29,12 +31,13 @@ luayrisimi <- function(A){
     L[j,1] <- A[j,1] / U[1,1] 
   }
   
+  
   # Step - 3 
   for (i in 2:(n-1)){
     
     # Step - 4
-    L[i,i] <- (A[i,i] - sum(L[i,1:(i-1)] * U[1,1:(i-1)])) / U[i,i]
-    #U[i,i] <- (A[i,i] - sum(L[i,1:(i-1)] * U[1,1:(i-1)])) / U[i,i]
+    (L[i,i] * U[i,i]) <- A[i,i] - sum(L[i,1:(i-1)] * U[1,1:(i-1)])
+    
     if(L[i,i] * U[i,i] == 0){
       stop("MATRİSİN LU AYRIŞIMI MÜMKÜN DEĞİLDİR.")
     }
@@ -49,7 +52,7 @@ luayrisimi <- function(A){
   
   
   # Step - 6
-  L[n,n] <- ((A [n,n]) - (sum(L[n,1:(n-1)] * U[1,n:(n-1)]))) / U[n,n]
+  (L[n,n] * U[n,n]) <- (A [n,n]) - (sum(L[n,1:(n-1)] * U[1,n:(n-1)]))
   if(L[n,n] * U[n,n] == 0){
     stop("A = LU ve A, TEKİLDİR.")
   }
